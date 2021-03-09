@@ -3,7 +3,6 @@ include(CheckCXXCompilerFlag)
 
 project(cbson)
 
-set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
 
 option(USE_LUA "Use Lua (also called 'C' Lua) version 5.1 includes" OFF)
@@ -61,7 +60,7 @@ else()
   endif ()
 endif()
 
-add_library(cbson MODULE ${sources} ${compat})
+add_library(cbson ${sources} ${compat})
 set_target_properties(cbson PROPERTIES PREFIX "")
 if (NOT WIN32)
   set_target_properties(cbson PROPERTIES SUFFIX ".so")
