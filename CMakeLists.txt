@@ -60,7 +60,7 @@ else()
   endif ()
 endif()
 
-add_library(cbson ${sources} ${compat})
+add_library(cbson STATIC ${sources} ${compat})
 set_target_properties(cbson PROPERTIES PREFIX "")
 if (NOT WIN32)
   set_target_properties(cbson PROPERTIES SUFFIX ".so")
