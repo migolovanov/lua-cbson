@@ -3,6 +3,7 @@ include(CheckCXXCompilerFlag)
 
 project(cbson)
 
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
 
 option(USE_LUA "Use Lua (also called 'C' Lua) version 5.1 includes" OFF)
