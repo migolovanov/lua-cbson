@@ -1,12 +1,12 @@
 package = "lua-cbson"
 version = "git-1"
 source = {
-    url = "https://github.com/isage/lua-cbson/archive/master.zip",
+    url = "https://github.com/migolovanov/lua-cbson/archive/master.zip",
     dir = "lua-cbson-master"
 }
 description = {
     summary = "Lua bindings for libbson",
-    homepage = "https://github.com/isage/lua-cbson",
+    homepage = "https://github.com/migolovanov/lua-cbson",
     maintainer = "isage.dna@gmail.com",
 }
 build = {
